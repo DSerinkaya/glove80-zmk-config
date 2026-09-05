@@ -147,6 +147,17 @@
 
         layer_5 {
             bindings = <
+&kp LC(Z)   &kp LS(LC(Z))  &kp LC(S)  &trans  &trans                                                                  &trans  &trans  &trans  &trans  &trans
+&kp LC(N0)  &trans         &trans     &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &trans         &trans     &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &trans         &trans     &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &trans         &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &trans         &trans     &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        layer_6 {
+            bindings = <
 &trans  &trans  &trans  &trans  &trans                                                                  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
