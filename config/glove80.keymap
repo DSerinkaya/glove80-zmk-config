@@ -136,34 +136,6 @@
             bindings = <&kp LC(L)>;
             layers = <5>;
         };
-
-        combo_deselect {
-            timeout-ms = <50>;
-            key-positions = <40 41>;
-            bindings = <&kp LC(D)>;
-            layers = <5>;
-        };
-
-        combo_flip_canvas {
-            timeout-ms = <50>;
-            key-positions = <42 43>;
-            bindings = <&kp LC(W)>;
-            layers = <5>;
-        };
-
-        combo_toggle_bw {
-            timeout-ms = <50>;
-            key-positions = <44 45>;
-            bindings = <&kp LC(Y)>;
-            layers = <5>;
-        };
-
-        combo_brush_menu {
-            timeout-ms = <50>;
-            key-positions = <29 30>;
-            bindings = <&mkp RCLK>;
-            layers = <5>;
-        };
     };
     keymap {
         compatible = "zmk,keymap";
@@ -229,7 +201,7 @@
 &trans  &trans  &trans        &trans    &trans    &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans        &trans    &eraser_hold_macro  &trans                                        &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans        &trans    &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&kp RET  &trans  &trans        &trans    &trans            &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&kp RET  &mo 7  &trans        &trans    &trans            &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -241,6 +213,17 @@
 &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        ps_actions {
+            bindings = <
+&trans  &trans     &trans     &trans      &trans                                                                  &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &trans     &trans      &trans    &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LC(D)  &kp LC(W)  &kp LC(Y)   &mkp RCLK  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &trans     &trans      &trans    &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &trans     &trans      &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &trans     &trans      &trans            &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
